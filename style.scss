@@ -1,0 +1,137 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #0D192C;
+  color: #8BACD9;
+  font-family: 'Outfit';
+}
+
+.box {
+  width: 350px;
+  height: 596px;
+  background-color: #15263F;
+  border-radius: 15px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight: 600;
+  padding: 24px;
+
+  .photo {
+    position: relative;
+
+    .main-logo {
+      width: 302px;
+      border-radius: 8px;
+    }
+
+    .sub-photo {
+      position: absolute;
+      background-color: #0FF;
+      top: 0px;
+      width: 100%;
+      height: 100%;
+      opacity: 0;
+      border-radius: 10px;
+
+        .eye-of-agamato {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+        }
+    }
+
+    .sub-photo:hover {
+      opacity: 0.75;
+      cursor: pointer;
+    }
+
+  }
+  
+  h1 {
+    color: #FFF;
+    font-size: 22px;
+    margin-top: 24px;
+  }
+
+  h1:hover {
+    color: #0FF;
+    cursor: pointer;
+  }
+
+  p {
+    font-weight: 300;
+    font-size: 18px;
+    margin-top: 16px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16px;
+    margin-top: -10px;
+    margin-bottom: 5px;
+
+    .left {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 6.49px;
+      }
+
+      p {
+        color: #0FF;
+      }
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+
+      img {
+        margin-right: 9.03px;
+      }
+
+      p {
+        font-weight: 400;
+      }
+    }
+  }
+
+  .border {
+    height: 1px;
+    width: 302px;
+    background-color: #2E405A;
+    margin: 0 auto;
+  }
+  
+  .footer {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 400;
+
+    img {
+      width: 33px;
+      border: 1px solid #FFF;
+      border-radius: 50px;
+      margin-right: 16px;
+    }
+
+    span {
+      color: #FFF;
+    }
+
+    span:hover {
+      color: #0FF;
+      cursor: pointer;
+    }
+  }
+}
